@@ -1,0 +1,55 @@
+1.# Solicitar al usuario la cantidad en metros
+metros = float(input("Ingrese una cantidad en metros: "))
+
+# Convertir metros a kilómetros
+kilometros = metros / 1000
+
+# Mostrar el resultado
+print(f"{metros} metros equivalen a {kilometros} kilómetros.")
+
+
+2.# Solicitar al usuario dos números
+numero1 = float(input("Ingrese el primer número: "))
+numero2 = float(input("Ingrese el segundo número: "))
+
+# Comparar los números para encontrar el mayor y el menor
+if numero1 > numero2:
+    mayor = numero1
+    menor = numero2
+else:
+    mayor = numero2
+    menor = numero1
+
+# Mostrar el resultado
+print(f"El número mayor es {mayor} y el número menor es {menor}.")
+
+
+3.# Inicializar una lista para almacenar los números
+numeros = []
+
+# Solicitar al usuario ingresar 5 números y almacenarlos en la lista
+for i in range(5):
+    numero = float(input(f"Ingrese el número {i + 1}: "))
+    numeros.append(numero)
+
+# Ordenar los números de forma ascendente (sin usar sort())
+numeros_ordenados = []
+while numeros:
+    minimo = min(numeros)
+    numeros_ordenados.append(minimo)
+    numeros.remove(minimo)
+
+# Mostrar los números ordenados
+print("Números ordenados de forma ascendente:", numeros_ordenados)
+
+
+
+
+4.# Solicitar al usuario el valor de n
+n = int(input("Ingrese el valor de n: "))
+
+# Mostrar los primeros n números en forma descendente utilizando un bucle for
+for i in range(n, 0, -1):
+    print(i, end=" ")
+
+
